@@ -7,7 +7,7 @@
 | Input validation AC1 | Null, -0.01, 10000.01, 50.001 και 50.000 | IllegalArgumentException στα μη έγκυρα inputs, αποδοχή trailing zeros |
 | Coupon normalization AC2 | student10, whitespace, null και OTHER | Έκπτωση μόνο για αναγνωρισμένο κουπόνι |
 | Όριο AC3 | 49.99, 50.00, 50.01 | Η έκπτωση αρχίζει ακριβώς στο 50.00 |
-| Rounding και cap AC4 | 50.05, 50.15, 200.01, 500.00 | Discount-first rounding και μέγιστη έκπτωση 20.00 |
+| Rounding και cap AC4 | 50.05, 50.15, 200.01, 500.00 | Η έκπτωση στρογγυλοποιείται HALF_UP στα δύο δεκαδικά πριν αφαιρεθεί· μέγιστη έκπτωση 20.00 |
 | Result και regression AC5 | Legacy tests και 500 inputs σε integer-cents oracle | Scale 2, τιμή εντός ορίων, συμπεριφορά χωρίς έκπτωση |
 
 ## Εκτέλεση
